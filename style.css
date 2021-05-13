@@ -1,0 +1,192 @@
+/*boiler plate project set-up*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/***************/
+main,
+.search,
+.content,
+.content__sprites,
+.content__info,
+.wrapperFullHeight {
+    justify-content: space-evenly;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.spinner {
+    position: absolute;
+    top: 1%;
+    right: 4.5%;
+}
+
+.spinner__hidden {
+    opacity: 0%;
+    visibility: hidden;
+    z-index: -5;
+}
+
+.search,
+.content,
+.content__sprites,
+.content__info {
+    width: 100%;
+}
+
+.search {
+    height: 8%;
+    transform: translateX(-10vw);
+}
+
+.content {
+    height: 92%;
+    border-top: 2px solid rgb(128, 128, 128);
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('./background-img.png');
+    background-size: cover;
+    background-position-y: -150px;
+}
+
+.content__sprites {
+    height: 15%;
+}
+
+.content__info {
+    height: 65%;
+}
+
+.wrapperMaxContent {
+    height: max-content;
+    width: max-content;
+}
+
+.wrapperFullHeight {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapperAutoScroller {
+    height: 85%;
+    width: 70%;
+    overflow-y: auto;
+    padding-top: 10px;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.3);
+    background-color: rgba(255,255,255, 0.65);
+}
+
+.wrapperAutoScroller::-webkit-scrollbar {
+    width: 7px;
+}
+
+.wrapperAutoScroller::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.wrapperAutoScroller::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.wrapperAutoScroller::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+input,
+.btn,
+a,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Heebo';
+    font-weight: 300;
+}
+
+input,
+.btn {
+    outline: none;
+    font-size: 20px;
+    padding: 2px 10px;
+}
+
+input {
+    width: 400px;
+    margin-right: 5px;
+}
+
+.btn {
+    height: max-content;
+    width: max-content;
+    border: 2px solid silver;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(218, 218, 218);
+}
+
+.btn:active {
+    background-color: rgb(202, 202, 202);
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+h2,
+h3 {
+    color: rgb(41, 41, 41);
+}
+
+h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.transition {
+    transition: all 0.1s;
+}
+
+.rounded {
+    border-radius: 5px;
+}

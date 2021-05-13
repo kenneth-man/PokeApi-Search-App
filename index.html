@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+        <title>#26 &mdash; pokeApi</title>
+    </head>
+
+    <body>  
+        <main class="column">
+            <img src="./spinner.gif" class="spinner spinner__hidden">
+
+            <div class="search row">
+                <div class="wrapperMaxContent row">
+                    <input type="text" placeholder="name of pokemon..." id="search-input">
+
+                    <button id="search-btn" class="btn transition rounded">search</button>
+                </div>
+
+                <h1>OR</h1>
+
+                <button id="search-btn-random" class="btn transition rounded">randomize</button>
+            </div>
+
+            <div class="content column">
+                <h2 id="name">Type in a pokemon's name or randomly search</h2>
+
+                <div class="content__sprites column">
+                    <h3>Sprites</h3>
+
+                    <div class="wrapperMaxContent row">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" id="front_default">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/132.png" id="back_default">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png" id="front_shiny">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/132.png" id="back_shiny">
+                    </div>
+                </div>
+
+                <div class="content__info row">
+                    <div class="wrapperFullHeight column">
+                        <h3>Stats</h3>
+    
+                        <div class="wrapperAutoScroller column rounded" id="stats"></div>
+                    </div>
+    
+                    <div class="wrapperFullHeight column">
+                        <h3>Abilities</h3>
+    
+                        <div class="wrapperAutoScroller column rounded" id="abilities"></div>
+                    </div>
+    
+                    <div class="wrapperFullHeight column">
+                        <h3>Moves</h3>
+    
+                        <div class="wrapperAutoScroller column rounded" id="moves"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+  
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>
